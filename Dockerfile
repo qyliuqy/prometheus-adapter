@@ -1,5 +1,5 @@
 ARG GO_VERSION
-
+ARG GOARCH=amd64
 FROM golang:${GO_VERSION} as build
 
 WORKDIR /go/src/sigs.k8s.io/prometheus-adapter
